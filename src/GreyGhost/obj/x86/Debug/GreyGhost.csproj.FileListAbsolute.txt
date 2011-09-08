@@ -1,0 +1,14 @@
+F:\Clientwork\GreyGhost\src\GreyGhost\bin\Debug\GreyGhost.exe
+F:\Clientwork\GreyGhost\src\GreyGhost\bin\Debug\GreyGhost.pdb
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\MainWindow.baml
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\MainWindow.g.cs
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\App.g.cs
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GreyGhost_MarkupCompile.cache
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GreyGhost.g.resources
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GreyGhost.Properties.Resources.resources
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GreyGhost.exe
+F:\Clientwork\GreyGhost\src\GreyGhost\obj\x86\Debug\GreyGhost.pdb
+F:\Clientwork\GreyGhost\src\GreyGhost\bin\Debug\MarkdownSharp.dll
