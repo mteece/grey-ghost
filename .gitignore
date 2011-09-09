@@ -1,0 +1,7 @@
+src/GreyGhost/bin
+src/GreyGhost/obj
+
+src/*.suo
+
+*.user
+*.pdb
