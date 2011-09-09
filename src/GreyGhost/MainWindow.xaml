@@ -1,12 +1,38 @@
 ﻿<Window x:Class="GreyGhost.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Grey Ghost" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Loaded="Window_Loaded" d:DesignHeight="350" d:DesignWidth="800" SizeToContent="WidthAndHeight">
-    <Grid>
-        <TextBlock Margin="50,5,428,288" Name="txtLabel">Markdown</TextBlock>
-        <TextBox Height="100" HorizontalAlignment="Left" Margin="50,20,0,0" Name="tbInput" VerticalAlignment="Top" Width="300" Background="{x:Null}" BorderBrush="CornflowerBlue" />
-        <TextBox Height="100" HorizontalAlignment="Left" Margin="50,130,0,0" Name="tbOutput" VerticalAlignment="Top" Width="300"  Background="{x:Null}" BorderBrush="Black" />
-        <Button Content="Mark Down" Height="23" HorizontalAlignment="Left" Margin="50,235, 0, 0" Name="btnMarkDown" VerticalAlignment="Top" Width="75" />
-        <WebBrowser Height="210" HorizontalAlignment="Left" Margin="360,20,0,0" Name="wbPreview" VerticalAlignment="Top" Width="390" />
-    </Grid>
+        Title="Grey Ghost" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Loaded="Window_Loaded" d:DesignHeight="450" d:DesignWidth="600" SizeToContent="WidthAndHeight" Background="White">
+
+    <Grid HorizontalAlignment="Stretch" Margin="5,5,5,5" Width="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="23" />
+                <RowDefinition Height="23" />
+            </Grid.RowDefinitions>
+            
+            <Label Content="Markdown" FontFamily="Georgia" FontSize="10" Grid.Column="0" Grid.Row="0"  Margin="0,0,0,0" Name="lblMarkDown" />
+            <TextBox AcceptsTab="True" AcceptsReturn="True" Background="{x:Null}" BorderBrush="CornflowerBlue" BorderThickness="1" FontFamily="Georgia" FontSize="10" Grid.Column="0" Grid.Row="1" Name="tbMarkDown" MinHeight="100" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto" />
+
+            <Label Content="Markup" FontFamily="Georgia" FontSize="10" Grid.Column="0" Grid.Row="2"  Margin="0,0,0,0" Name="lblMarkUp" />
+        <TextBox AcceptsTab="True" AcceptsReturn="True" Background="{x:Null}" BorderBrush="Gray" BorderThickness="1" FontFamily="Georgia" FontSize="10" Grid.Column="0" Grid.Row="3" Name="tbMarkUp" MinHeight="100" HorizontalAlignment="Stretch" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
+
+            <Label Content="Preview" FontFamily="Georgia" FontSize="10" Grid.Column="0" Grid.Row="4"  Margin="0,0,0,0" Name="lblPreview" />
+            <WebBrowser Grid.Column="0" Grid.Row="5" Margin="0,0,0,0" Name="wbPreview" MinHeight="100" HorizontalAlignment="Stretch" />
+
+            <Button Content="Generate" Grid.Column="0" Grid.Row="6" Name="btnGenerate" HorizontalAlignment="Left" Height="23"  />
+
+            <StatusBar Background="#FF451B1B" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Stretch" />
+            
+        </Grid>
+
+       
+
 </Window>

@@ -29,13 +29,13 @@ namespace GreyGhost
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 
-			this.btnMarkDown.Click += new RoutedEventHandler(btnMarkDown_Click);
+			this.btnGenerate.Click += new RoutedEventHandler(btnGenerate_Click);
 
 		}
 
-		public void btnMarkDown_Click(object sender, RoutedEventArgs e)
+		public void btnGenerate_Click(object sender, RoutedEventArgs e)
 		{
-			if (this.tbInput.Text.Length > 0)
+			if (this.tbMarkDown.Text.Length > 0)
 			{
 				MarkdownOptions opts = new MarkdownOptions();
 				opts.AutoNewlines = true;
@@ -46,9 +46,9 @@ namespace GreyGhost
 				StringBuilder output = new StringBuilder();
 
 				MarkdownSharp.Markdown maker = new Markdown(opts);
-				output.Append(maker.Transform(this.tbInput.Text));
+				output.Append(maker.Transform(this.tbMarkDown.Text));
 
-				this.tbOutput.Text = output.ToString();
+				this.tbMarkUp.Text = output.ToString();
 				this.wbPreview.NavigateToString(output.ToString());
 
 
