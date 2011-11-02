@@ -1,0 +1,12 @@
+﻿<Window x:Class="GreyGhost.Syntax"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Syntax"
+        Width="450" Height="174" Icon="Application.ico" ResizeMode="NoResize">
+    <Label HorizontalAlignment="Left"  Margin="5,5,0,0" VerticalAlignment="Top" FontSize="10">
+    <![CDATA[
+    TODO: syntax cheat sheet.
+    ]]>
+
+    </Label>
+</Window>
